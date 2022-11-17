@@ -73,5 +73,6 @@ class PostsController < ApplicationController
       unless @post.user != current_user
         redirect_to root_path, notice: "You don't have permissions to do that."
     end
+  end
 
 end
